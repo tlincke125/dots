@@ -1,0 +1,20 @@
+/etc/X11/xorg.conf.d/
+    name files XX*.conf
+    (ex: 10.monitor.conf) - read in numerical order
+
+/etc/X11/xorg.conf
+    Read more specific instructions
+
+xinit - to start an xserver
+    looks for ~/.xinitrc > which looks for /etc/X11/xinit/xinitrc.d/*.sh
+
+
+most basic - 
+
+exec i3
+
+    startx /path/to/otherxinitrc
+
+display managers:
+    gdm is what I have now,
+

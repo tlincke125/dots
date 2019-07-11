@@ -1,0 +1,7 @@
+#!/bin/bash
+
+dots=(".vimrc" ".tmux.conf" ".zshrc")
+
+for value in ${dots[*]}; do
+    ln -sf $HOME/dots/$value $HOME/$value
+done
