@@ -1,0 +1,104 @@
+let SessionLoad = 1
+if &cp | set nocp | endif
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+let v:this_session=expand("<sfile>:p")
+silent only
+silent tabonly
+cd ~/dev/main/curmc/sentinet/cpp/include/framework/control
+if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
+  let s:wipebuf = bufnr('%')
+endif
+set shortmess=aoO
+argglobal
+%argdel
+edit ~/dev/main/curmc/sentinet/cpp/src/libs/networking/ZMQControlClient.cpp
+set splitbelow splitright
+wincmd _ | wincmd |
+vsplit
+1wincmd h
+wincmd w
+set nosplitbelow
+set nosplitright
+wincmd t
+set winminheight=0
+set winheight=1
+set winminwidth=0
+set winwidth=1
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+argglobal
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+40,42fold
+83,86fold
+186,189fold
+205,208fold
+225,226fold
+237,238fold
+40
+normal! zo
+83
+normal! zo
+186
+normal! zo
+205
+normal! zo
+237
+normal! zo
+let s:l = 196 - ((34 * winheight(0) + 28) / 56)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+196
+normal! 041|
+lcd ~/dev/main/curmc/sentinet/cpp/include/framework/control
+wincmd w
+argglobal
+if bufexists("~/dev/main/curmc/sentinet/cpp/include/networking/zmq/ZMQControlClient.hpp") | buffer ~/dev/main/curmc/sentinet/cpp/include/networking/zmq/ZMQControlClient.hpp | else | edit ~/dev/main/curmc/sentinet/cpp/include/networking/zmq/ZMQControlClient.hpp | endif
+setlocal fdm=manual
+setlocal fde=0
+setlocal fmr={{{,}}}
+setlocal fdi=#
+setlocal fdl=0
+setlocal fml=1
+setlocal fdn=20
+setlocal fen
+silent! normal! zE
+let s:l = 1 - ((0 * winheight(0) + 28) / 56)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+1
+normal! 0
+lcd ~/dev/main/curmc/sentinet/cpp/include/framework/control
+wincmd w
+2wincmd w
+exe 'vert 1resize ' . ((&columns * 134 + 134) / 269)
+exe 'vert 2resize ' . ((&columns * 134 + 134) / 269)
+tabnext 1
+badd +196 ~/dev/main/curmc/sentinet/cpp/src/libs/networking/ZMQControlClient.cpp
+badd +186 ~/dev/main/curmc/sentinet/cpp/include/networking/zmq/ZMQControlClient.hpp
+badd +51 ~/dev/main/curmc/sentinet/cpp/include/framework/control/ControlClientInterface.hpp
+badd +22 ~/dev/main/curmc/sentinet/cpp/include/networking/zmq/ZMQControlClient2.hpp
+if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
+  silent exe 'bwipe ' . s:wipebuf
+endif
+unlet! s:wipebuf
+set winheight=1 winwidth=20 shortmess=filnxtToOSIc
+set winminheight=1 winminwidth=1
+let s:sx = expand("<sfile>:p:r")."x.vim"
+if file_readable(s:sx)
+  exe "source " . fnameescape(s:sx)
+endif
+let &so = s:so_save | let &siso = s:siso_save
+nohlsearch
+doautoall SessionLoadPost
+unlet SessionLoad
+" vim: set ft=vim :
