@@ -1,4 +1,3 @@
-
 execute pathogen#infect()
 source $HOME/.vim/config/main.vimrc
 source $HOME/.vim/config/hardmode.vimrc
