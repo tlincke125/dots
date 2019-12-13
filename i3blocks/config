@@ -4,12 +4,6 @@ color=#FF0000
 command=upower -i `upower -e | grep BAT` | grep percentage | awk '{print "BAT: "$2}'
 interval=60
 
-# Guess the weather hourly
-[weather]
-command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
-interval=3600
-color=#A4C2F4
-
 # Query my default IP address only on startup
 [ip]
 command=ip a | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*'  | tail -1 | awk '{ print "IP:" $1 }'
@@ -21,5 +15,15 @@ color=#91E78B
 command=date +%T
 interval=5
 
+
+[bandwidth]
+instance=wlp3s0;in
+label=
+interval=1
+
+[bandwidth]
+instance=wlp3s0;out
+label=
+interval=1
 
 

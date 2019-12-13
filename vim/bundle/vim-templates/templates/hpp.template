@@ -1,7 +1,12 @@
 /**
  * @author      : {{NAME}} ({{EMAIL}})
  * @file        : {{FILE}}
+ * @brief       : A brief description of the file
+ *
+ * A detailed description of the file
+ *
  * @created     : {{TIMESTAMP}}
+ * @license     : MIT
  */
 
 #ifndef {{MACRO_GUARD}}
@@ -11,11 +16,11 @@
 
 class {{CLASS}}
 {
-    public:
-        {{CLASS}} ({{CURSOR}});
-        virtual ~{{CLASS}} ();
-    private:
-        /* private data */
+  public:
+    {{CLASS}} ({{CURSOR}});
+    virtual ~{{CLASS}} ();
+  private:
+    /* private data */
 };
 
 #endif /* end of include guard {{MACRO_GUARD}} */

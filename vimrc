@@ -6,5 +6,9 @@ source $HOME/.vim/config/incsearch.vimrc
 source $HOME/.vim/config/nerdtree.vimrc
 source $HOME/.vim/config/nerdcommenter.vimrc
 source $HOME/.vim/config/folds.vimrc
+source $HOME/.vim/config/templates.vimrc
+source $HOME/.vim/config/html.vimrc
+source $HOME/.vim/config/multiplecursors.vimrc
+source $HOME/.vim/config/vim-matlab.vimrc
 
 " source $HOME/.vim/config/indentguides.vimrc

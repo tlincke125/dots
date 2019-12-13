@@ -1,10 +1,10 @@
 set background=dark
-set termguicolors
-colorscheme quantum
+" set termguicolors
+" colorscheme quantum
+colorscheme focuspoint
 
 let g:quantum_italics=1
 
 " CPP enhanced
 let g:cpp_class_scope_highlight = 1
 let g:cpp_member_variable_highlight = 1
-

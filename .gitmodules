@@ -40,3 +40,6 @@
 [submodule ".vim/bundle/vim-templates"]
 	path = .vim/bundle/vim-templates
 	url = https://github.com/tibabit/vim-templates
+[submodule "vim/bundle/vim-latex-live-preview"]
+	path = vim/bundle/vim-latex-live-preview
+	url = https://github.com/xuhdev/vim-latex-live-preview.git
