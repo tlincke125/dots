@@ -40,6 +40,12 @@
 [submodule ".vim/bundle/vim-templates"]
 	path = .vim/bundle/vim-templates
 	url = https://github.com/tibabit/vim-templates
-[submodule "vim/bundle/vim-latex-live-preview"]
-	path = vim/bundle/vim-latex-live-preview
-	url = https://github.com/xuhdev/vim-latex-live-preview.git
+[submodule "i3blocks/i3blocks-scripts"]
+	path = i3blocks/i3blocks-scripts
+	url = https://github.com/jplatte/i3blocks-scripts.git
+[submodule "i3blocks/i3blocks-contrib"]
+	path = i3blocks/i3blocks-contrib
+	url = https://github.com/vivien/i3blocks-contrib.git
+[submodule "vim/bundle/vim-ros"]
+	path = vim/bundle/vim-ros
+	url = https://github.com/taketwo/vim-ros
