@@ -1,7 +1,7 @@
 set background=dark
 " set termguicolors
 " colorscheme quantum
-colorscheme focuspoint
+colorscheme dracula
 
 let g:quantum_italics=1
 

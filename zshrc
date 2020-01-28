@@ -2,7 +2,7 @@
 export ZSH="/home/theo/.oh-my-zsh"
 
 # Theme for zsh
-ZSH_THEME="sunrise"
+ZSH_THEME="kolo"
 
 ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
@@ -44,12 +44,5 @@ export ROS_WORKSPACE="/home/theo/dev/curmc/ros"
 source /opt/ros/melodic/setup.zsh
 source /home/theo/dev/curmc/ros/devel/setup.zsh
 
-# alias tmux="TERM=screen-256color-bce tmux"
-# [ $TERM != "screen" ] && exec tmux
-# [ -z "$TMUX" ] && command -v tmux > /dev/null && TERM=xterm-256color && exec tmux
+alias tmux="TERM=screen-256color-bce tmux"
 
-# tmux attach &> /dev/null
-
-# if [[ ! $TERM =~ screen ]]; then
-#     exec tmux new -s session1
-# fi
