@@ -1,7 +1,8 @@
 # Theo's Config for i3
 
 # ================ Settings ===================
-set $mod Mod4
+set $mod Mod1
+
 for_window [class="^.*"] border pixel 2
 gaps inner 7
 gaps outer 7
@@ -43,7 +44,7 @@ bindsym $mod+Shift+d focus child
 
 # == Applications ==
 bindsym $mod+Return exec termite
-bindsym $mod+f exec google-chrome-stable 
+bindsym $mod+f exec qutebrowser 
 bindsym $mod+o exec korganizer 
 bindsym $mod+t exec tor-browser-en
 bindsym $mod+s exec spotify

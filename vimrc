@@ -14,6 +14,7 @@ source $HOME/.vim/config/html.vimrc
 source $HOME/.vim/config/multiplecursors.vimrc
 source $HOME/.vim/config/vim-matlab.vimrc
 source $HOME/.vim/config/youcompleteme.vimrc
+source $HOME/.vim/config/indentguides.vimrc
 
 
 " source $HOME/.vim/config/indentguides.vimrc
