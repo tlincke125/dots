@@ -1,2 +1,0 @@
-#!/bin/sh
-sway --my-next-gpu-wont-be-nvidia
